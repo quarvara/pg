@@ -46,7 +46,7 @@ const Payments = () => {
                 "Accept": "*/*",
                 "User-Agent": "Thunder Client (https://www.thunderclient.com)",
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${localStorage.getItem("token")}`
+               "Authorization": `Bearer ${products.upi}``
             };
 
             const response = await fetch('/api/upichange', {
